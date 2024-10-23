@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dymanic image</title>
+    <style>
+      body {
+       align-items: center;
+      }
+      .container {
+        width: 300px;
+        border: none;
+        border-radius: 10px;
+        padding: 24px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+        background-color: rgb(244, 242, 242);
+        align-items: center;
+       
+      }
+
+      .images {
+        height: 200px;
+        margin-bottom: 12px;
+        margin-top: 18px;
+      }
+
+      button {
+        background-color: white;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <img class="images" src="images/image-1.jpg" alt="">
+      <button class="click-button">chage image</button>
+    </div>
+    
+
+
+    <script>
+
+      const imageContainer = [
+         'images/image-1.jpg',
+         'images/image-2.png',
+         'images/image-3.jpg',
+         'images/image-4.png',
+         'images/image-5.jpg'
+         ];
+
+      const image = document.querySelector('.images');
+      let  index = 0;
+      
+      function changeImage() {
+        image.src = imageContainer[index];
+        index = (index + 1) % imageContainer.length;
+      }
+      changeImage();
+    
+
+      setInterval(changeImage, 3000);
+        
+    </script>
+  </body>
+</html>
