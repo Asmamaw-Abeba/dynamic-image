@@ -13,18 +13,51 @@ import { gallary } from "./gallary.js";
 const image = document.querySelector('.images');
 let  index = 0;
 
+
+function leftSlideArrow() {
+  document.querySelector('.left-arrow')
+   .addEventListener('click', () => {
+    if (index - 2 >= 0) {
+      image.src = gallary[index - 2];
+      slideController(index - 1);
+      index--;
+    } else {
+      document.querySelector('.feadback')
+       .innerHTML = 'This is the first slide';
+      setTimeout(() => {
+        document.querySelector('.feadback')
+       .innerHTML = '';
+      }, 2000);
+    }
+  });
+}
+leftSlideArrow();
+
+
+function rightSlideArrow() {
+  document.querySelector('.right-arrow')
+  .addEventListener('click', () => {
+    image.src = gallary[index];
+    slideController(index + 1);
+    index++;
+  });
+}
+rightSlideArrow();
+
+
 function changeImage() {
   image.src = gallary[index];
   index = (index + 1) % gallary.length;
-
-  const slideCounter = document.querySelector('.slide');
-  slideCounter.innerHTML = 'slide: ' + index;
+  slideController(index);
 }
 changeImage();
 
+
 let intervals = setInterval(changeImage, 3000);
 
-const controlerBtn = document.querySelector('.stop-button');
+
+function peuseResume() {
+  const controlerBtn = document.querySelector('.stop-button');
   controlerBtn.addEventListener('click', () => {
     if(controlerBtn.innerText === 'stop') {
       clearInterval(intervals);
@@ -37,6 +70,16 @@ const controlerBtn = document.querySelector('.stop-button');
       controlerBtn.classList.remove('resume');
       console.log(controlerBtn);
     }
-   
   });
+}
+peuseResume();
+
+
+
+
+
+function slideController(index) {
+  const slideCounter = document.querySelector('.slide');
+  slideCounter.innerHTML = 'slide: ' + index;
+}
 
