@@ -24,6 +24,7 @@ body {
  }
 
  button {
+  color: white;
    background-color: rgb(27, 221, 21);
    padding: 10px 20px;
    border: none;
@@ -34,4 +35,9 @@ body {
   color: blue;
   font-weight: bold;
   text-transform: capitalize;
+ }
+
+ .resume {
+  color: white;
+  background-color: rgb(27, 221, 21);
  }

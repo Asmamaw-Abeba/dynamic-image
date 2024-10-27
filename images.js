@@ -1,7 +1,6 @@
 import { gallary } from "./gallary.js";
-console.log(gallary);
-
-console.log(gallary.length);
+// console.log(gallary);
+// console.log(gallary.length);
 
 // const imageContainer = [
 //   'images/image-1.jpg',
@@ -29,9 +28,15 @@ const controlerBtn = document.querySelector('.stop-button');
   controlerBtn.addEventListener('click', () => {
     if(controlerBtn.innerText === 'stop') {
       clearInterval(intervals);
+      controlerBtn.innerHTML = 'Resume';
+      controlerBtn.classList.add('resume');
+      console.log(controlerBtn);
+    } else {
+      intervals = setInterval(changeImage, 3000);
+      controlerBtn.innerHTML = 'stop';
+      controlerBtn.classList.remove('resume');
+      console.log(controlerBtn);
     }
-    
-    
-    controlerBtn.classList.add(resume);
+   
   });
 
