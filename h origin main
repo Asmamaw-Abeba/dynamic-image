@@ -1,0 +1,36 @@
+* [33mcommit dd7cfcc0c280dbb03898416c16b62720a33b5817[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+[31m|[m Author: Asmamaw-Abeba <asmeabeba12@gmail.com>
+[31m|[m Date:   Sun Oct 27 06:56:13 2024 -0700
+[31m|[m 
+[31m|[m     Add arrow to slide
+[31m|[m     and feadback when the slide is at first
+[31m|[m 
+* [33mcommit 691990b62b496babbb2ff93a9c4cc19308f03bb5[m
+[31m|[m Author: Asmamaw-Abeba <asmeabeba12@gmail.com>
+[31m|[m Date:   Sun Oct 27 03:27:23 2024 -0700
+[31m|[m 
+[31m|[m     Add resume button to resume slide show
+[31m|[m 
+* [33mcommit f9a523a9125066c75d370c5a7d110f53cc6a5a4d[m
+[31m|[m Author: Asmamaw-Abeba <asmeabeba12@gmail.com>
+[31m|[m Date:   Sun Oct 27 02:57:19 2024 -0700
+[31m|[m 
+[31m|[m     add images and slide stop button
+[31m|[m 
+* [33mcommit c7bf1b58f9167b477927423ef2d60325d8a2c9d7[m[33m ([m[1;31morigin/main[m[33m)[m
+[31m|[m Author: Asmamaw-Abeba <asmeabeba12@gmail.com>
+[31m|[m Date:   Wed Oct 23 12:24:53 2024 -0700
+[31m|[m 
+[31m|[m     separate the file into different to more clarity and modularity
+[31m|[m 
+* [33mcommit 0af146d6df061a8796e8c3a90867c4283bed5fac[m
+[31m|[m Author: Asmamaw-Abeba <asmeabeba12@gmail.com>
+[31m|[m Date:   Wed Oct 23 12:17:59 2024 -0700
+[31m|[m 
+[31m|[m     add width properity for images
+[31m|[m 
+* [33mcommit 681d9833f5188fe21b260e8027cece1748b7ce25[m
+  Author: Asmamaw-Abeba <asmeabeba12@gmail.com>
+  Date:   Wed Oct 23 12:08:31 2024 -0700
+  
+      create dynamic image by using js

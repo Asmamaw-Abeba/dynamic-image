@@ -37,9 +37,19 @@ leftSlideArrow();
 function rightSlideArrow() {
   document.querySelector('.right-arrow')
   .addEventListener('click', () => {
-    image.src = gallary[index];
-    slideController(index + 1);
-    index++;
+    if (index < gallary.length) {
+      image.src = gallary[index];
+      slideController(index + 1);
+      index++;
+    } else {
+      document.querySelector('.feadback')
+       .innerHTML = 'This is the last slide';
+      setTimeout(() => {
+        document.querySelector('.feadback')
+       .innerHTML = '';
+      }, 2000);
+    }
+    
   });
 }
 rightSlideArrow();
